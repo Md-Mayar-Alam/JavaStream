@@ -5,7 +5,7 @@ import java.util.List;
 import java.util.function.Consumer;
 import java.util.function.Predicate;
 
-public class FilterExample {
+public class FilterAndForEachExample {
 
 	public static void main(String[] args) {
 		List<String> namesList= Arrays.asList("Hemant", "Alam", "Nikita", "Subharna");
@@ -77,7 +77,7 @@ public class FilterExample {
 		System.out.println("========================================");
 		
 		namesList.stream()
-					.filter(FilterExample::isNotNikita)
+					.filter(FilterAndForEachExample::isNotNikita)
 					.forEach(System.out::println);
 	}
 
